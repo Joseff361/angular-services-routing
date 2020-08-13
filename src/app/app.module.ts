@@ -16,6 +16,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
 
+import { DishService } from '../app/services/dish.service'; 
+
 //Decorator: Is a function that modifies js classes
 @NgModule({ // Allow you spcify some details about the module
   //Metadata
@@ -33,7 +35,7 @@ import { DishdetailComponent } from './dishdetail/dishdetail.component';
     MatCardModule,
     MatButtonModule
   ],
-  providers: [], //services
+  providers: [DishService], //services
   bootstrap: [AppComponent]
   //The root Module doesn't have exports
 })
