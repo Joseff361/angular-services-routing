@@ -16,13 +16,18 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
 
-import { DishService } from '../app/services/dish.service'; 
+import { DishService } from '../app/services/dish.service';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component'; 
+
+
 
 //Decorator: Is a function that modifies js classes
 @NgModule({ // Allow you spcify some details about the module
   //Metadata
   declarations: [ //components, directives and pipes
-    AppComponent, MenuComponent, DishdetailComponent
+    AppComponent, MenuComponent, DishdetailComponent, HeaderComponent, FooterComponent
   ],
   imports: [ //third party modules
     BrowserModule,
@@ -33,7 +38,8 @@ import { DishService } from '../app/services/dish.service';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    FontAwesomeModule
   ],
   providers: [DishService], //services
   bootstrap: [AppComponent]
