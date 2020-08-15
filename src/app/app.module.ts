@@ -25,7 +25,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component'; 
 
-
+import { PromotionService } from './services/promotion.service';
 
 //Decorator: Is a function that modifies js classes
 @NgModule({ // Allow you spcify some details about the module
@@ -45,7 +45,7 @@ import { ContactComponent } from './contact/contact.component';
     MatButtonModule,
     FontAwesomeModule
   ],
-  providers: [DishService], //services
+  providers: [DishService, PromotionService], //services
   bootstrap: [AppComponent]
   //The root Module doesn't have exports
 })

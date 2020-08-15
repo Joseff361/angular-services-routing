@@ -13,4 +13,13 @@ export class DishService {
   getDishes(): Dish[]{
     return DISHES;
   }
+
+  //The filter returns a sub-array
+  getDish(id: String ): Dish{
+    return DISHES.filter((dish) => (dish.id === id))[0]; //first element from the array
+  }
+
+  getFeatureDish( ): Dish{
+    return DISHES.filter((dish) => dish.featured)[0]; //If exists
+  }
 }
