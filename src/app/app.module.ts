@@ -17,9 +17,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
 
 import { DishService } from '../app/services/dish.service';
+
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component'; 
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component'; 
 
 
 
@@ -27,7 +31,7 @@ import { FooterComponent } from './footer/footer.component';
 @NgModule({ // Allow you spcify some details about the module
   //Metadata
   declarations: [ //components, directives and pipes
-    AppComponent, MenuComponent, DishdetailComponent, HeaderComponent, FooterComponent
+    AppComponent, MenuComponent, DishdetailComponent, HeaderComponent, FooterComponent, HomeComponent, AboutComponent, ContactComponent
   ],
   imports: [ //third party modules
     BrowserModule,
